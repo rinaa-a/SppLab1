@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SppLab1
 {
-    interface ITracer
+    public interface ITracer
     {
         void StartTrace();
         void StopTrace();

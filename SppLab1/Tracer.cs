@@ -9,7 +9,7 @@ using SppLab1.TraceResults;
 
 namespace SppLab1
 {
-    class Tracer : ITracer
+    public class Tracer : ITracer
     {
         private TraceResult TraceResult { get; }
         private static readonly object lockObject = new object();

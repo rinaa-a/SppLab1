@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 
 namespace SppLab1.TraceResults
 {
-    class ThreadInfo : ITraceResult<MethodInfo>
+    public class ThreadInfo : ITraceResult<MethodInfo>
     {
         [XmlElement("id")]
         [JsonProperty("id")]
@@ -42,6 +42,10 @@ namespace SppLab1.TraceResults
         {
             ThreadID = threadID;
             Methods = new List<MethodInfo>();
+        }
+
+        public ThreadInfo()
+        {
         }
     }
 }

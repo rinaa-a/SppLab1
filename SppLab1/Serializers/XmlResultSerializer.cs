@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace SppLab1.Serializers
 {
-    class XmlResultSerializer : IResultSerializer
+    public class XmlResultSerializer : IResultSerializer
     {
         public string Serialize(TraceResult result)
         {

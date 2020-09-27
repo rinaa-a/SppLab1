@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace SppLab1.TraceResults
 {
-    class MethodInfo : ITraceResult<MethodInfo>
+    public class MethodInfo : ITraceResult<MethodInfo>
     {
         [XmlElement("name")]
         [JsonProperty("name")]
@@ -27,7 +27,7 @@ namespace SppLab1.TraceResults
         [JsonProperty("methods")]
         public List<MethodInfo> InnerMethods { get; }
 
-        public MethodInfo(string methodName, string className)
+        public MethodInfo(string className, string methodName)
         {
             MethodName = methodName;
             ClassName = className;
@@ -38,6 +38,10 @@ namespace SppLab1.TraceResults
         public void AddInformation(MethodInfo innerMethod)
         {
             InnerMethods.Add(innerMethod);
+        }
+
+        public MethodInfo()
+        {
         }
     }
 }

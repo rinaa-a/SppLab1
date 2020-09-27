@@ -8,7 +8,7 @@ using SppLab1.TraceResults;
 
 namespace SppLab1.Serializers
 {
-    class JsonResultSerializer : IResultSerializer
+    public class JsonResultSerializer : IResultSerializer
     {
         public string Serialize(TraceResult result)
         {

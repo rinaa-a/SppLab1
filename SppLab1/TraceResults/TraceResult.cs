@@ -8,10 +8,10 @@ using System.Xml.Serialization;
 
 namespace SppLab1.TraceResults
 {
-    class TraceResult : ITraceResult<ThreadInfo>
+    public class TraceResult : ITraceResult<ThreadInfo>
     {
-        [XmlElement("threads")]
-        [JsonProperty("threads")]
+        [XmlElement("thread")]
+        [JsonProperty("thread")]
         public List<ThreadInfo> Threads { get; }
 
         public void AddInformation(ThreadInfo thread)
