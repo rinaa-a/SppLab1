@@ -35,6 +35,7 @@ namespace ConsoleApplication
             consoleWriter.WriteResult(resultJson);
             fileWriter.WriteResult(resultXml, nameof(resultXml));
             fileWriter.WriteResult(resultJson, nameof(resultJson));
+            Console.ReadLine();
         }
     }
 }

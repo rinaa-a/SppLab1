@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "Conso
 		{8EB6561B-AE52-45D4-B2F5-3D871421AB07} = {8EB6561B-AE52-45D4-B2F5-3D871421AB07}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject", "NUnitTestProject\NUnitTestProject.csproj", "{8DA65D7E-00BD-4C6C-B1F9-5567E68DE785}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{FB9DF386-6E03-4D1B-B521-D4E57087E748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB9DF386-6E03-4D1B-B521-D4E57087E748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB9DF386-6E03-4D1B-B521-D4E57087E748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA65D7E-00BD-4C6C-B1F9-5567E68DE785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA65D7E-00BD-4C6C-B1F9-5567E68DE785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA65D7E-00BD-4C6C-B1F9-5567E68DE785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA65D7E-00BD-4C6C-B1F9-5567E68DE785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SppLab1
 {
-    class MethodTracer
+    public class MethodTracer
     {
         private Stack<MethodTracer> innerTracers;
         private MethodInfo methodTraceInfo;
@@ -70,6 +70,10 @@ namespace SppLab1
                     methodTraceInfo.ExecutionTime = executionTime;
                     Active = false;
                 }
+            }
+            else
+            {
+                throw new InvalidOperationException();
             }
         }
     }

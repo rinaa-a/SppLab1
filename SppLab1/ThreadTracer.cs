@@ -9,7 +9,7 @@ using System.Diagnostics;
 
 namespace SppLab1
 {
-    class ThreadTracer
+    public class ThreadTracer
     {
         public ThreadInfo ThreadTraceInfo { get; }
         private MethodTracer tracer;
@@ -43,6 +43,10 @@ namespace SppLab1
                     ThreadTraceInfo.AddInformation(methodInfo);
                     tracer = null;
                 }
+            }
+            else
+            {
+                throw new InvalidOperationException();
             }
         }
     }

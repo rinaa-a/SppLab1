@@ -53,6 +53,10 @@ namespace SppLab1
                     ThreadTracer tracer = Tracers[id];
                     tracer.StopTrace();
                 }
+                else
+                {
+                    throw new InvalidOperationException();
+                }
             }
         
         }
